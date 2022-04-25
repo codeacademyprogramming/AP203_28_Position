@@ -1,0 +1,51 @@
+ul{
+
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    width: 60px;
+    padding: 8px 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 30%;
+    border-radius: 20px;
+    height: 4px;
+    background-color: orange;
+    transition: all 0.4s;
+}
+
+li a:hover::before{
+    width: 100%;
+}
+
+.note{
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.note::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+}
